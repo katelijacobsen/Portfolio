@@ -1,0 +1,120 @@
+#star_2{
+    animation-name: rotate_star;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-timing-function: ease-in-out;
+    transform-origin: 50% 50%;
+}
+#star_1{
+    animation-name: rotate_star;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-timing-function: ease-in-out;
+    transform-origin: 50% 50%;
+}
+@keyframes rotate_star{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 90deg;
+    }
+}
+
+#ducky{
+    animation-name: up_down;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+@keyframes up_down{
+    0%{
+        top: -20%;
+    }
+    100%{
+        top: -18%;
+    }
+}
+
+.basic_web_collapsed{
+    animation-name: fade;
+    animation-duration: 0.5s;
+    animation-iteration-count:inherit;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.basic_ui_ux_collapsed{
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-iteration-count:inherit;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+#basic_animation{
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count:inherit;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+#basic_content{
+    animation-name: fade;
+    animation-duration: 2.5s;
+    animation-iteration-count:inherit;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.croissant{
+    animation-name: fade_out_right;
+    animation-duration: 0.5s;
+    animation-iteration-count: inherit;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.74,.18,.23,.82);
+}
+@keyframes fade{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
+
+.hide{
+    animation-name: fade_out_right;
+    animation-duration: 0.5s;
+    animation-iteration-count: inherit;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.74,.18,.23,.82);
+}
+@keyframes fade_out_right {
+    0%{ 
+        opacity: 100%;
+        left:0;
+    }
+    100%{
+        opacity: 0%;
+        left: 5%;
+    }
+    
+}
+.show{
+    animation-name: fade_in_left;
+    animation-duration: 0.5s;
+    animation-iteration-count: inherit;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.74,.18,.23,.82);
+}
+@keyframes fade_in_left {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        left: 10%;
+    }
+}

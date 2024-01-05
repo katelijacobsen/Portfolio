@@ -1,0 +1,272 @@
+/****************FONTS****************/
+@font-face {
+  font-family: "Teko-SemiBold";
+  src: url(../fonts/Teko-SemiBold.woff2);
+}
+@font-face {
+  font-family: "Teko-Regular";
+  src: url(../fonts/Teko-Regular.woff2);
+}
+@font-face {
+  font-family: "Teko-Medium";
+  src: url(../fonts/Teko-Medium.woff2);
+}
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url(../fonts/Montserrat-Light.woff2);
+}
+@font-face {
+  font-family: "Teko-Light";
+  src: url(../fonts/Teko-Light.woff2);
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(../fonts/Montserrat-Bold.woff2);
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow.woff2");
+}
+@font-face {
+  font-family: "Bodo";
+  src: url("../fonts/Bodo-Amat.woff2");
+}
+/****************UNIVERSAL/GLOBAL****************/
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background: radial-gradient(
+    73.53% 49.96% at 50% 50%,
+    #f7f6fb 42.88%,
+    #e3e3f1 100%
+  );
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  margin-right: 20px;
+}
+.menu li:last-child{
+  margin-right: 50px;
+}
+.menu a {
+  font-family: "Teko-SemiBold";
+  font-size: 24px;
+  margin-top: 20px;;
+  text-decoration: none;
+  color: #f7f6fc;
+}
+.menu a:hover{
+  color: #11a8d1;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+h1 {
+  font-family: "Teko-SemiBold";
+  font-size: 72px;
+  height: 90px;
+  color: #272796;
+}
+h2 {
+  font-family: "Teko-Medium";
+  font-size: 48px;
+  color: #272796;
+}
+h3 {
+  font-family: "Teko-Regular";
+  font-size: 36px;
+  color: #272796;
+}
+
+h4 {
+  font-family: "Teko-Light";
+  font-size: 36px;
+  color: #272796;
+}
+p {
+  font-family: "Montserrat-Thin";
+  color: #272796;
+  line-height: 180%;
+}
+.footer_links {
+  font-family: "Teko-SemiBold";
+  font-size: 28px;
+  text-decoration: none;
+  color: #272796;
+}
+
+footer {
+  background: #3f3fc6;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.55) inset;
+  padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 180px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_text{
+  font-family: 'Montserrat Bold';
+  color: aliceblue;
+}
+/****************FORSIDE****************/
+.index_btn {
+  padding: 1% 3% 1% 3%;
+  margin-right: 5%;
+  border-radius: 15px;
+  font-family: "Teko-SemiBold";
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+  color: #e3e3f1;
+  background: linear-gradient(180deg, #3f3fc6 0%, #272796 100%);
+  border: 2px solid;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.index_btn:hover {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  background: linear-gradient(180deg, #11a8d1 0%, #007090 100%);
+}
+/****************LIDT OM MIG****************/
+.historic {
+  background: #f7f6fc;
+  border-radius: 20px;
+  box-shadow: 7px 4px 8px 0px rgba(0, 0, 0, 0.15) inset;
+  padding: 5%;
+  margin: 0% 0% 5% 0%;
+}
+
+/****************--------------PORTFOLIO--------------****************/
+/****************--------------BASIC WEB--------------****************/
+
+#project {
+  font-family: "Montserrat Bold";
+  font-size: 16px;
+  background: linear-gradient(150deg, #b824f7 0%, #4a1362 100%);
+  color: aliceblue;
+  text-decoration: none;
+  padding: 2%;
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+}
+#project:hover {
+  background: linear-gradient(150deg, #24f755 0%, #117127 100%);
+}
+.show_description_web {
+  opacity: 100%;
+  margin: 5%;
+  color: rgb(158, 182, 202);
+  font-size: 18px;
+}
+/****************--------------BASIC UI/UX--------------****************/
+
+#paper_texture_container {
+  background-image: url(../img/paper_bg.png);
+  mix-blend-mode: multiply;
+}
+
+#ux_description {
+  color: #f1f2ed;
+}
+#project_documentation {
+  font-family: "Montserrat Bold";
+  font-size: 16px;
+  color: #f1f2ed;
+  text-decoration: none;
+  background: #7a8067;
+  padding: 2%;
+  border: 1px solid #f1f2ed;
+  border-radius: 5px;
+}
+#project_prototype {
+  font-family: "Montserrat Bold";
+  font-size: 16px;
+  color: #f1f2ed;
+  text-decoration: none;
+  background: #7a8067;
+  padding: 2%;
+  border: 1px solid #f1f2ed;
+  border-radius: 5px;
+}
+#project_croissant_website {
+  font-family: "Montserrat Bold";
+  font-size: 16px;
+  text-decoration: none;
+  color: #f1f2ed;
+  background: #7a8067;
+  padding: 2%;
+  border: 1px solid #f1f2ed;
+  border-radius: 5px;
+}
+#project_documentation:hover {
+  color: #7a8067;
+  background: #f1f2ed;
+}
+#project_prototype:hover {
+  color: #7a8067;
+  background: #f1f2ed;
+}
+#project_croissant_website:hover {
+  color: #7a8067;
+  background: #f1f2ed;
+}
+/****************--------------BASIC ANIMATION--------------****************/
+#basic_animation {
+  background: linear-gradient(180deg, #72bbff 0%, #4696ff 100%);
+}
+#animation_description {
+  font-family: "Montserrat Bold";
+  color: #0a3a5c;
+}
+
+#ducky_link {
+  font-family: "Bodo";
+  font-size: 16px;
+  color: #f1f2ed;
+  text-decoration: none;
+  background: linear-gradient(-125deg, #171389 0%, #231dc8 100%);
+  padding: 10px;
+  border: 1px solid #f1f2ed;
+  border-radius: 5px;
+}
+#ducky_link:hover {
+  background: linear-gradient(-125deg, #73d424 0%, #49940c 100%);
+}
+/****************--------------BASIC CONTENT--------------****************/
+#basic_content {
+  border-radius: 10px;
+  background: #f8f6f2;
+}
+
+#content_description {
+  color: #a15a44;
+}
+.content_project {
+  font-family: "Montserrat Bold";
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #a15a44;
+  color: #f8f6f2;
+  padding: 5px;
+  border-radius: 5px;
+  border: 3px double;
+}
+.content_project:hover {
+  background-color: #f8f6f2;
+  color: #a15a44;
+}
