@@ -1,5 +1,5 @@
 /****************--------------MOBILESITE--------------****************/
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 375px) {
   .menu {
     display: none;
   }
@@ -30,7 +30,6 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #3f3fc6;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.35) inset;
     height: 80px;
   }
@@ -39,7 +38,6 @@
   }
   nav.active .menu {
     display: block;
-    background-color: rgb(37, 70, 190);
     position: absolute;
     top: 60px;
     left: 0;
@@ -61,15 +59,26 @@
   .index_h {
     text-align: center;
   }
-  .portrait_1 {
-    width: 360px;
-    height: auto;
-    margin: 4%;
+  h1 {
+    font-family: "Jost-Medium";
+    color: transparent;
+    background-color: #ab42eb;
+    background-clip: text;
+    text-shadow: 0px 2px 3px #eb42be, 0px 2px 50px #eb42be;
+    font-size: 2rem;
+    height: 40px;
+  }
+  .h2_index {
+    font-family: "Jost-SemiBold";
+    color: transparent;
+    background-color: #ffffff;
+    background-clip: text;
+    font-size: 1.5rem;
+    text-shadow: none;
   }
   .index_paragraph {
     margin: 2% 2% 15% 5%;
     text-align: center;
-    line-height: 160%;
   }
   li {
     display: flex;
@@ -83,7 +92,7 @@
     display: grid;
     grid-row: 5;
     justify-items: center;
-    margin-bottom: 35%;
+    margin-bottom: 45%;
   }
   .social_media_footer {
     display: grid;
@@ -91,10 +100,19 @@
     gap: 5%;
     justify-items: center;
   }
-  .portrait_container {
-    display: flex;
-    justify-content: center;
+  .index_body {
+    background-image: url("../img/pink_circle.webp");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 300px;
+    width: 650px;
+    left: -30%;
+    opacity: 75%;
+    filter: drop-shadow(0px 0px 20px #eb42be);
+    top: 64%;
+    z-index: -1;
   }
+
   /****************--------------LIDT_OM_MIG--------------****************/
   .about_portrait {
     transform: scaleX(-1);
@@ -108,6 +126,7 @@
     justify-content: space-around;
     text-align: center;
     margin: 5%;
+    gap: 20px;
   }
   .historic_container {
     margin: 0% 5% 0% 5%;
@@ -118,6 +137,9 @@
     gap: 20px;
     justify-items: center;
     margin-bottom: 10%;
+  }
+  .portfolio_h{
+    text-align: center;
   }
   /****************--------------BASIC WEB--------------****************/
   #basic_web {
@@ -260,7 +282,7 @@
   }
   .basic_animation_h {
     font-family: "Bodo";
-    font-size: 24px;
+    font-size: 1.25rem;
     color: #0a3a5c;
     margin: 5% 0 0 5%;
   }
@@ -307,7 +329,7 @@
   .basic_content_h {
     font-family: "Montserrat Bold";
     width: 300px;
-    font-size: 150%;
+    font-size: 1.5rem;
     color: #a15a44;
     margin: 5% 0 0 5%;
   }
@@ -335,26 +357,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3f3fc6;
-    box-shadow: 0px -9px 12px 0px rgba(0, 0, 0, 0.55) inset;
     height: 80px;
   }
   .logo {
     scale: 30%;
   }
+  .index_main{
+    position: relative;
+    overflow: hidden;
+  }
   /****************FORSIDE/INDEX****************/
   .index_h {
     text-align: center;
   }
-  .portrait_1 {
-    width: 360px;
-    height: auto;
-    margin: 4%;
+  .h1_index {
+    font-family: "Jost-Medium";
+    color: transparent;
+    background-color: #ab42eb;
+    background-clip: text;
+    text-shadow: 0px 2px 3px #eb42be, 0px 2px 50px #eb42be;
+    font-size: 4rem;
+    height: 90px;
   }
+ 
   .index_paragraph {
     margin: 2% 2% 0% 5%;
     text-align: center;
-    line-height: 160%;
   }
   li {
     display: flex;
@@ -362,7 +390,7 @@
   }
   .index_btn {
     display: grid;
-    margin: 0% 12% 5% 10%;
+    margin: 10% 12% 0% 10%;
   }
   .btn_grid_1_2 {
     display: flex;
@@ -375,9 +403,28 @@
     gap: 5%;
     justify-items: center;
   }
-  .portrait_container {
-    display: flex;
-    justify-content: center;
+  .index_body {
+    background-image: url("../img/waves2.webp");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 500px;
+    width: 1510px;
+    left: -98%;
+    filter: drop-shadow(0px 0px 10px #42ebeb);
+    z-index: -1;
+    top: 63%;
+  }
+  .glow{
+    background-image: url("../img/glow.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 800px;
+    width: 805px;
+    mix-blend-mode: overlay;
+    top: 35%;
+    left: 1%;
+    opacity: 50%;
+    scale: 124%;
   }
   /****************LIDT_OM_MIG****************/
   .about_portrait {
@@ -397,11 +444,11 @@
     grid-row-start: 2;
     grid-column-start: 2;
   }
-  .about_me_introduction{
+  .about_me_introduction {
     display: grid;
     grid-row-start: 2;
     grid-column-start: 1;
-    margin-left: 10%;
+    margin-left: 8%;
     text-align: left;
   }
   .historic_container {
@@ -409,6 +456,13 @@
   }
   .historic {
     margin-right: 5%;
+  }
+  .portfolio_h{
+    text-align: left;
+  }
+  .portfolio_paragraph{
+    text-align: left;
+    margin: 5% 0 ;
   }
   /****************--------------PORTFOLIO--------------****************/
   .portfolio_container {
@@ -452,7 +506,7 @@
   .basic_web_h {
     font-family: "Barlow";
     color: aliceblue;
-    font-size: 32px;
+    font-size: 2rem;
     margin: 8% 0 0 5%;
     text-align: left;
   }
@@ -644,7 +698,7 @@
   }
   .basic_content_h {
     font-family: "Montserrat Bold";
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #a15a44;
     margin: 8% 0% 0 0%;
     text-align: center;
@@ -679,38 +733,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3f3fc6;
-    box-shadow: 0px -9px 12px 0px rgba(0, 0, 0, 0.55) inset;
     height: 80px;
   }
   .logo {
     scale: 30%;
   }
+  
   /****************FORSIDE/INDEX****************/
   .index_h {
     display: grid;
     text-align: left;
   }
-  .portrait_1 {
-    display: grid;
-    width: 515px;
-    height: auto;
+  .h1_index {
+    font-family: "Jost-Medium";
+    color: transparent;
+    background-color: #ab42eb;
+    background-clip: text;
+    text-shadow: 0px 2px 3px #eb42be, 0px 2px 50px #eb42be;
+    font-size: 6rem;
+    height: 90px;
   }
-  .portrait_container {
-    display: grid;
-    grid-column-start: 2;
-    grid-row-start: 2;
-  }
+ 
   .index_paragraph {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
-    margin: 2% 2% 15% 0%;
+    margin: 3% 2% 15% 0%;
     text-align: left;
   }
   .h2_index {
-    margin-top: 5%;
+    margin-top: 16%;
+    font-size: 3rem;
   }
   li {
     display: flex;
@@ -719,13 +773,15 @@
   .grid_1_1 {
     display: grid;
     gap: 20px;
-    grid-template-columns: 600px 500px 500px 500px;
+    grid-template-columns: 720px;
     grid-template-rows: 200px 100px 100px;
     align-items: center;
-    margin: 10% 0% 15% 0%;
     padding-left: 10%;
     padding-right: 10%;
+    margin: 0% 3% 10% 3%;
+    
   }
+  
   .btn_grid_1_2 {
     grid-row-start: 3;
   }
@@ -735,16 +791,66 @@
   }
   .index_btn {
     display: grid;
-    margin: 0% 21% 5% 0%;
+    margin: 10% 21% 5% 0%;
   }
   .social_media_footer {
     display: grid;
     grid-template-rows: 1fr;
   }
   .index_body {
-    background-image: url(../img/waves.svg);
+    background-image: url("../img/waves2.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    position: absolute;
+    height: 500px;
+    width: 3300px;
+    left: -41%;
+    top: 40%;
+    filter: drop-shadow(0px 0px 10px #42ebeb);
+    z-index: -2;
+    scale: 70%;
+    
+    
+  }
+  .glow{
+    background-image: url("../img/glow.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 800px;
+    width: 1055px;
+    mix-blend-mode: overlay;
+    top: 74%;
+    left: 29%;
+    opacity: 50%;
+    scale: 199%;
+    z-index: -1;
+  }
+  .ellipse_1{
+    background-image: url("../img/ellipse_pink.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 781px;
+    width: 433px;
+    top: 0%;
+    left: 75%;
+    scale: 100%;
+    z-index: -1;
+    opacity: 25%;
+  }
+  .ellipse_2{
+    background-image: url("../img/ellipse_purple.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 781px;
+    width: 433px;
+    top: 30%;
+    left: 70%;
+    scale: 100%;
+    z-index: -1;
+    opacity: 50%;
+  }
+  .index_main{
+    position: relative;
+    overflow: hidden;
   }
   /****************LIDT_OM_MIG****************/
   .about_portrait {
@@ -770,11 +876,53 @@
   .historic {
     margin-right: 45%;
   }
+  .ellipse_about_1{
+    background-image: url(../img/ellipse_pink.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 14%;
+    left: 74%;
+    z-index: -1;
+  }
+  .ellipse_about_2{
+    background-image: url(../img/pink_circle.webp);
+    background-repeat: no-repeat;
+    height: 614px;
+    width: 615px;
+    position: absolute;
+    top: 22%;
+    left: 36%;
+    z-index: -1;
+  }
+  .ellipse_about_3{
+    background-image: url(../img/ellipse_pink.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 19%;
+    left: 5%;
+    z-index: -1;
+    scale: 70%;
+  }
+  .ellipse_about_4{
+    background-image: url(../img/ellipse_purple.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 36%;
+    left: 85%;
+    z-index: -1;
+    scale: 129%;
+  }
   /****************--------------PORTFOLIO--------------****************/
   .portfolio_container {
     display: flex;
     justify-content: space-around;
-    margin: 5% 3% 10% 3%;
+    margin: 0 0 10% 0;
   }
   .portfolio_h {
     margin: 0 60% 0 3%;
@@ -810,7 +958,7 @@
   .basic_web_h {
     font-family: "Barlow";
     color: aliceblue;
-    font-size: 32px;
+    font-size: 2rem;
     margin: 8% 0 0 5%;
     text-align: left;
   }
@@ -1001,7 +1149,7 @@
   }
   .basic_content_h {
     font-family: "Montserrat Bold";
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #a15a44;
     margin: 8% 0% 0 0%;
     text-align: center;

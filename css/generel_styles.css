@@ -1,27 +1,31 @@
 /****************FONTS****************/
 @font-face {
-  font-family: "Teko-SemiBold";
-  src: url(../fonts/Teko-SemiBold.woff2);
+  font-family: "Jost-Black";
+  src: url(../fonts/Jost-Black.woff2);
 }
 @font-face {
-  font-family: "Teko-Regular";
-  src: url(../fonts/Teko-Regular.woff2);
+  font-family: "Jost-SemiBold";
+  src: url(../fonts/Jost-SemiBold.woff2);
 }
 @font-face {
-  font-family: "Teko-Medium";
-  src: url(../fonts/Teko-Medium.woff2);
+  font-family: "Jost-Regular";
+  src: url(../fonts/Jost-Regular.woff2);
 }
 @font-face {
-  font-family: "Montserrat-Thin";
-  src: url(../fonts/Montserrat-Light.woff2);
+  font-family: "Jost-Medium";
+  src: url(../fonts/Jost-Medium.woff2);
 }
 @font-face {
-  font-family: "Teko-Light";
-  src: url(../fonts/Teko-Light.woff2);
+  font-family: "Jost-Thin";
+  src: url(../fonts/Jost-Light.woff2);
+}
+@font-face {
+  font-family: "Jost-Light";
+  src: url(../fonts/Jost-Light.woff2);
 }
 @font-face {
   font-family: "Montserrat Bold";
-  src: url(../fonts/Montserrat-Bold.woff2);
+  src: url(../fonts/Jost-Bold.woff2);
 }
 @font-face {
   font-family: "Barlow";
@@ -37,14 +41,13 @@
   padding: 0%;
 }
 body {
-  background: radial-gradient(
-    73.53% 49.96% at 50% 50%,
-    #f7f6fb 42.88%,
-    #e3e3f1 100%
+  background: var(
+    --BG-Linear,
+    linear-gradient(180deg, #0c0c0c 0%, #eb42be 258.33%)
   );
 }
 
-.menu{
+.menu {
   display: flex;
   list-style: none;
   margin: 0;
@@ -53,18 +56,22 @@ body {
 .menu li {
   margin-right: 20px;
 }
-.menu li:last-child{
+.menu li:last-child {
   margin-right: 50px;
 }
 .menu a {
-  font-family: "Teko-SemiBold";
-  font-size: 24px;
-  margin-top: 20px;;
+  font-family: "Jost-Black";
+  font-size: 2.4rem;
+  margin-top: 20px;
   text-decoration: none;
   color: #f7f6fc;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
-.menu a:hover{
-  color: #11a8d1;
+.menu a:hover {
+  text-shadow: 0px 0px 10px #faf9f5;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 .burger {
@@ -73,82 +80,141 @@ body {
   cursor: pointer;
 }
 
-
 h1 {
-  font-family: "Teko-SemiBold";
-  font-size: 72px;
+  font-family: "Jost-Medium";
+  color: transparent;
+  background-color: #ab42eb;
+  background-clip: text;
+  text-shadow: 0px 2px 3px #eb42be, 0px 2px 50px #eb42be;
+  font-size: 4.5rem;
   height: 90px;
-  color: #272796;
 }
 h2 {
-  font-family: "Teko-Medium";
-  font-size: 48px;
-  color: #272796;
+  font-family: "Jost-SemiBold";
+  color: transparent;
+  background-color: #1b62e7;
+  background-clip: text;
+  text-shadow: 0px 2px 3px #42ebeb, 0px 2px 50px #42ebeb;
+  font-size: 3rem;
 }
 h3 {
-  font-family: "Teko-Regular";
-  font-size: 36px;
-  color: #272796;
+  font-family: "Jost-Regular";
+  font-size: 2.25rem;
+  color: #faf9f5;
 }
 
 h4 {
-  font-family: "Teko-Light";
-  font-size: 36px;
-  color: #272796;
+  font-family: "Jost-Light";
+  font-size: 2rem;
+  color: #faf9f5;
 }
 p {
-  font-family: "Montserrat-Thin";
-  color: #272796;
+  font-family: "Jost-Regular";
+  color: #faf9f5;
   line-height: 180%;
 }
 .footer_links {
   font-family: "Teko-SemiBold";
-  font-size: 28px;
+  font-size: 1.75rem;
   text-decoration: none;
   color: #272796;
 }
 
 footer {
-  background: #3f3fc6;
-  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.55) inset;
+  background: linear-gradient(180deg, #ab42eb 0%, #7a2fa7 100%);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.35) inset;
   padding-bottom: 50px;
-    padding-top: 50px;
-    margin-top: 180px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
+  padding-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  
 }
-.footer_text{
-  font-family: 'Montserrat Bold';
+.footer_text {
+  font-family: "Montserrat Bold";
   color: aliceblue;
 }
 /****************FORSIDE****************/
 .index_btn {
-  padding: 1% 3% 1% 3%;
-  margin-right: 5%;
+  padding: 5px 8px 5px 8px;
   border-radius: 15px;
-  font-family: "Teko-SemiBold";
+  font-family: "Jost-SemiBold";
   font-size: 36px;
   text-align: center;
   text-decoration: none;
   color: #e3e3f1;
-  background: linear-gradient(180deg, #3f3fc6 0%, #272796 100%);
-  border: 2px solid;
-  transition-duration: 0.2s;
+  background: linear-gradient(
+      319deg,
+      rgba(66, 235, 235, 0.5) 24.28%,
+      rgba(66, 235, 235, 0) 68.43%
+    ),
+    radial-gradient(
+      103.12% 102.54% at 50% 50%,
+      rgba(0, 0, 0, 0) 45.83%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+      374.75% 157.4% at 87.81% 36.25%,
+      rgba(191, 43, 243, 0.7) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      134.84% 103.32% at 29.06% 25%,
+      rgba(200, 43, 239, 0.7) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  box-shadow: 0px 4px 100px 0px #ab42eb, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition-duration: 0.8s;
   transition-timing-function: ease-in-out;
 }
 .index_btn:hover {
-  transition-duration: 0.2s;
+  transition-duration: 0.8s;
   transition-timing-function: ease-in-out;
-  background: linear-gradient(180deg, #11a8d1 0%, #007090 100%);
+  background: linear-gradient(
+      319deg,
+      rgba(66, 235, 235, 0.2) 24.28%,
+      rgba(66, 235, 235, 0) 68.43%
+    ),
+    radial-gradient(
+      103.12% 102.54% at 50% 50%,
+      rgba(0, 0, 0, 0) 45.83%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+      374.75% 157.4% at 87.81% 36.25%,
+      rgba(93, 235, 66, 0.7) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      134.84% 103.32% at 29.06% 25%,
+      rgba(93, 235, 66, 0.7) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  box-shadow: 0px 4px 100px 0px #5deb42, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 /****************LIDT OM MIG****************/
 .historic {
-  background: #f7f6fc;
-  border-radius: 20px;
-  box-shadow: 7px 4px 8px 0px rgba(0, 0, 0, 0.15) inset;
+  border-radius: 60px;
+  border: 1px solid #42ebeb;
+  background: radial-gradient(
+      175.75% 115.19% at -14.05% -44.1%,
+      rgba(66, 235, 235, 0.4) 0%,
+      rgba(66, 229, 235, 0) 100%
+    ),
+    radial-gradient(
+      194.11% 167.17% at 30.65% 206.89%,
+      #ab42eb 0%,
+      rgba(171, 66, 235, 0) 100%
+    ),
+    radial-gradient(
+      83.16% 55.03% at 80.16% 25.49%,
+      rgba(235, 66, 190, 0.3) 0%,
+      rgba(235, 66, 190, 0) 100%
+    );
+  box-shadow: 0px 0px 70px 0px rgba(171, 66, 235, 0.5);
+  margin: 0 0 5% 0;
   padding: 5%;
-  margin: 0% 0% 5% 0%;
+  backdrop-filter: blur(7px);
 }
 
 /****************--------------PORTFOLIO--------------****************/
@@ -156,7 +222,7 @@ footer {
 
 #project {
   font-family: "Montserrat Bold";
-  font-size: 16px;
+  font-size: 1rem;
   background: linear-gradient(150deg, #b824f7 0%, #4a1362 100%);
   color: aliceblue;
   text-decoration: none;
@@ -185,7 +251,7 @@ footer {
 }
 #project_documentation {
   font-family: "Montserrat Bold";
-  font-size: 16px;
+  font-size: 1rem;
   color: #f1f2ed;
   text-decoration: none;
   background: #7a8067;
@@ -195,7 +261,7 @@ footer {
 }
 #project_prototype {
   font-family: "Montserrat Bold";
-  font-size: 16px;
+  font-size: 1rem;
   color: #f1f2ed;
   text-decoration: none;
   background: #7a8067;
@@ -205,7 +271,7 @@ footer {
 }
 #project_croissant_website {
   font-family: "Montserrat Bold";
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   color: #f1f2ed;
   background: #7a8067;
@@ -236,7 +302,7 @@ footer {
 
 #ducky_link {
   font-family: "Bodo";
-  font-size: 16px;
+  font-size: 1rem;
   color: #f1f2ed;
   text-decoration: none;
   background: linear-gradient(-125deg, #171389 0%, #231dc8 100%);
@@ -258,7 +324,7 @@ footer {
 }
 .content_project {
   font-family: "Montserrat Bold";
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   background-color: #a15a44;
   color: #f8f6f2;
