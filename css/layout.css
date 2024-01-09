@@ -411,7 +411,7 @@
     width: 1510px;
     left: -98%;
     filter: drop-shadow(0px 0px 10px #42ebeb);
-    z-index: -1;
+    z-index: -2;
     top: 63%;
   }
   .glow{
@@ -425,6 +425,7 @@
     left: 1%;
     opacity: 50%;
     scale: 124%;
+    z-index: -1;
   }
   /****************LIDT_OM_MIG****************/
   .about_portrait {
